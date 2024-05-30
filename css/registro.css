@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-image:  url(../imagenes/netflix/Fallout.jpg);
+  background-image: url(../imagenes/netflix/Fallout.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   color: white;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 .signup-box {
-  background-color: rgba(0, 0, 0, 0.8); 
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 40px;
   border-radius: 8px;
   text-align: center;
@@ -36,6 +36,9 @@ body {
 input[type="text"],
 input[type="email"],
 input[type="password"],
+input[type="date"],
+#pais,
+
 button {
   width: 100%;
   padding: 12px;
@@ -55,7 +58,7 @@ button {
 
 button:hover {
   background-color: #75272b;
-  transform: scale(1.010) ;
+  transform: scale(1.010);
 }
 
 .login-link {
@@ -72,15 +75,20 @@ button:hover {
   text-decoration: underline;
 }
 
-.signup-box a{
+.signup-box a {
   text-decoration: none;
 }
 
-.sasa{
+.sasa {
+  color: #777272;
+}
+
+form input {
+  background: #333;
   color: #b3b3b3;
 }
 
-form input{
+#pais {
   background: #333;
-  color: #fff;
+  color: #b3b3b3;
 }

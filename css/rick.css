@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(30, 31, 31);
+    color: #f2f0f0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.character-card1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    columns: 3;
+    gap: 18px;
+    color: aliceblue;
+    padding: 8px 16px;
+    margin: 10px;
+    border: 0;
+    font-size: 18px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+
+}
+
+/**div{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    color: aliceblue;
+    padding: 8px 16px;
+    margin: 10px;
+    border: 0;
+    font-size: 18px;
+    border: 1px solid gainsboro;  
+    border-radius: 5px;
+}
+*/
+
+#filters input,
+#filters #status-filter {
+    padding: 8px 16px;
+    margin: 10px;
+    border: 0;
+    font-size: 18px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+/* se muestra en grilla / modo columna (3 columnas) / con espaciado entremedio */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    color: aliceblue;
+
+
+}
+
+/*modificar libremente la imagen cuando quiera*/
+.image-container {
+    display: flex;
+}
+
+/*En la imagen dentro de la clase imagen container.
+Un width de 100% para que ocupe todo el image container*/
+.image-container img {
+    width: 100%;
+
+}
+
+/*Padding pone espaciado entre las tarjetas.
+Box shadow agrega sombra al borde (de xbordes - color negro)*/
+article {
+    padding: 10px;
+    box-shadow: 0px 0px 1px #f2f0f0;
+}
+
+.nav-links li a:hover {
+    color: #e50914;
+
+}

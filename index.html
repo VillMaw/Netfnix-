@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de Películas y Series</title>
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83
+DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
   <link rel="stylesheet" href="./css/netfnix.css">
   <link rel="shortcut icon" href="./imagenes/1.jpg" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstra
-p.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83
-DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -19,32 +19,40 @@ DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <img src="./imagenes/netflix/NETfNIX-15-4-2024_1.png" alt="img">
       </div>
       <ul class="menu">
-        <li><a class="enlace" href="./registro.html">Inicio</a></li>
-        <li><a class="enlace" href="./registro.html">Series</a></li>
-        <li><a class="enlace" href="./registro.html">Películas</a></li>
-        <li><a class="enlace" href="./registro.html">Mi Lista</a></li>
+        <li><a class="enlace" href="./pages/registro.html">Inicio</a></li>
+        <li><a class="enlace" href="./pages/registro.html">Series</a></li>
+        <li><a class="enlace" href="./pages/registro.html">Películas</a></li>
+        <li><a class="enlace" href="./pages/registro.html">Mi Lista</a></li>
       </ul>
     </div>
     <div class="login-container">
       <div>
         <h2>¿Ya tienes una cuenta?</h2>
-        <p class="login"><a class="enlace" href="./login1.html" target="_blank">Inicia sesión
+        <p class="login"><a class="enlace" href="./pages/login1.html" target="_blank">Inicia sesión
             aquí</a></p>
       </div>
       <div>
         <h2>¿Nuevo por aquí?</h2>
-        <p class="login"><a class="enlace" href="./registro.html" target="_blank">Regístrate</a></p>
+        <p class="login"><a class="enlace" href="./pages/registro.html" target="_blank">Regístrate</a></p>
       </div>
     </div>
     <div class="hero">
       <h1>Disfruta de las mejores películas y series</h1>
       <div class="boton">
-        <a href="#" class="btn">Ver Ahora</a>
+        <a href="#seccionDestacados" class="btn">Ver Ahora</a>
       </div>
     </div>
   </header>
   <main>
     <section class="contenido">
+      <div class="pelicu">
+        <h1>¿Qué estas buscando para ver?</h1>
+        <div class="searche">
+          <input class="bus" type="text" id="searchInput" placeholder="Buscar película...">
+          <button class="busc" onclick="buscarPelicula()">Buscar</button>
+        </div>
+      </div>
+      <section id="seccionDestacados"></section>
       <h2 class="destacados">Destacados</h2>
       <div class="peliculas">
         <div class="movie">
@@ -92,14 +100,15 @@ DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
           <h3>The boys</h3>
         </div>
         <div class="movie">
-          <img src="./imagenes/netflix/Interestelar.jpg" alt="Póster de Interestelar">
-          <h3>Interestelar</h3>
+          <a href="./pages/rick.html">
+            <img src="./imagenes/netflix/images.jpeg" alt="Póster de Rick and Morty">
+          </a>
+          <h3>Rick and Morty</h3>
         </div>
       </div>
       <div class="boton">
         <a href="#" class="btn">Ver Mas</a>
       </div>
-
     </section>
     <section class="categories">
       <h2>Categorías</h2>
@@ -119,13 +128,16 @@ DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <nav>
       <div class="logo2">
         <video class="vid" autoplay loop>
-          <source class="video" src="./imagenes/netflix/TheBoys.mov" type="video/mp4">
+          <source class="video" src="./imagenes/videos/TheBoys1080p.mov" type="video/mp4">
         </video>
       </div>
   </main>
   <footer>
     <p>&copy; 2024 Página de Películas y Series / Codo a codo 4.0</p>
   </footer>
+
+  <script src="./js/indexP.js"></script>
+
 </body>
 
 </html>
