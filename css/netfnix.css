@@ -35,18 +35,14 @@ body {
   justify-content: start;
   align-items: center;
   width: 100%;
-  /*border: 2px solid blue;*/
   margin: 5px;
 }
 
 .cont img {
-  /*border: 2px solid red;*/
   width: 200px;
 }
 
 .logo {
-  /*background-color: #0c0c0c;*/
-  /*border: 2px solid red;*/
   display: grid;
 }
 
@@ -61,7 +57,6 @@ header {
   background-image: url(../imagenes/netflix/portada-netflix.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  /*background-position: 0px -100px;*/
   background-size: cover;
 }
 
@@ -71,7 +66,6 @@ header {
   justify-content: space-around;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
-  /*border: 2px solid red;*/
 }
 
 .menu:hover {
@@ -145,13 +139,12 @@ footer {
 }
 
 .movie:hover,
-.series:hover {
+.series:hover,
+.movie h3:hover {
   transform: scale(1.06);
+  color: red;
 }
 
-.movie h3:hover {
-  color: red
-}
 
 
 .hero h1 {
@@ -244,7 +237,7 @@ p {
   color: #fff;
   text-decoration: none;
   border-radius: 100px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.1s ease;
   text-align: center;
   margin: 10px;
 
@@ -264,7 +257,7 @@ p {
   display: grid;
   margin: 10px;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -280,6 +273,7 @@ p {
   margin-top: 50px;
   margin-bottom: 40px;
   color: white;
+  animation: slide-up 1s ease infinite alternate;
 
 }
 
@@ -301,7 +295,7 @@ li {
 
 .category-list a:hover {
   color: #dd073c;
-  transform: scale(2);
+  transform: scale(10);
 }
 
 footer {
@@ -313,7 +307,6 @@ footer {
 .logo2 {
   display: grid;
   justify-content: center;
-  /*border: 2px solid red;*/
   border-radius: 10px;
   background-color: #000;
 }
@@ -498,7 +491,6 @@ footer {
 
   body {
     font-size: 10px;
-    /* Tamaño de fuente más pequeño para dispositivos móviles */
 
   }
 
@@ -533,62 +525,20 @@ footer {
   .descripcion-pelicula {
     font-size: 13px;
   }
+
+  .peliculas {
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .movie {
+    justify-items: center;
+    margin: 20px;
+
+  }
+
+
 }
 
 /* aca temina lo de telefono */
-
-
-
-
-
-
-
-
-
-
-/* prueba para telefono 
-@media (max-width: 600px) {
-  .logo {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu li {
-    margin: 5px 0;
-  }
-
-  .login-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero h1 {
-    font-size: 1.2em;
-  }
-
-  .hero .boton {
-    width: 100%;
-    text-align: center;
-  }
-
-  .btn {
-    width: 100%;
-    padding: 15px 0;
-  }
-
-  .category-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .category-list li {
-    flex: 0 0 45%;
-    margin: 5px;
-  }
-}  */

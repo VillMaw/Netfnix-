@@ -1,6 +1,6 @@
 
 function buscarPelicula() {
-    const apiKey = '9d94a5948850daa4a43141576ba19b24'; // Reemplaza con tu clave de API
+    const apiKey = '9d94a5948850daa4a43141576ba19b24';
     const query = document.getElementById('searchInput').value;
 
     const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}&language=es`;

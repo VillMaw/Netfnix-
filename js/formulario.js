@@ -1,19 +1,10 @@
-// document.getElementById('formulario').addEventListener('submit', function(event) {
-//     const usuario = document.getElementById('usuario').value;
-//     const contrasena = document.getElementById('contrasena').value;
 
-//     if (usuario.trim() === '' || contrasena.trim() === '') {
-//         alert('Por favor, completa todos los campos.'); // Muestra el mensaje en la consola
-//         event.preventDefault(); // Evita que el formulario se envíe
-//     }
-// });
-
-document.getElementById('formulario').addEventListener('submit', function(event) {
+document.getElementById('formulario').addEventListener('submit', function (event) {
     const username = document.getElementById('usuario').value;
     const password = document.getElementById('contrasenia').value;
     const errorMessage = document.getElementById('mensajeError');
 
-    // Clear any previous error messages
+
     errorMessage.textContent = '';
     errorMessage.classList.remove('show');
 
@@ -36,10 +27,9 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         }, 3000);
         return;
     }
-
-    // Form is valid, submit the form
+    window.location.href = '../index.html';
     event.preventDefault();
-    // Submit the form using JavaScript or make an AJAX request
+
 });
 
 function validateInput(input, inputType) {

@@ -156,7 +156,7 @@ form .form-help :where(label, a) {
 .mensaje-error {
     display: none;
     position: absolute;
-    top: 0;
+    top: 90%;
     left: 15%;
     transform: translateX(-50%);
     background-color: #e50914;
@@ -176,12 +176,10 @@ form .form-help :where(label, a) {
 }
 
 @keyframes slideIn {
-    0% {
-        transform: translateY(-100%);
-    }
+
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0%);
     }
 }
 
@@ -216,15 +214,12 @@ form .form-help :where(label, a) {
     @keyframes slideIn {
 
         0% {
-            transform: translateY(90%);
-        }
-    
-        100% {
             transform: translateY(300%);
+        }
+
+        100% {
+            transform: translateY(70%);
         }
     }
 
 }
-
-
-

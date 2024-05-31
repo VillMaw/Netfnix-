@@ -17,10 +17,12 @@ body {
 }
 
 .signup-box {
+  display: grid;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 40px;
   border-radius: 8px;
   text-align: center;
+  justify-items: center;
 }
 
 .netflix-logo {
@@ -91,4 +93,48 @@ form input {
 #pais {
   background: #333;
   color: #b3b3b3;
+}
+
+.mensaje-error {
+  display: none;
+  position: absolute;
+  top: 75%;
+  transform: translateX(-50%);
+  background-color: #e50914;
+  color: white;
+  border: 2px solid #b20710;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+  width: 30%;
+}
+
+.mensaje-error.show {
+  display: block;
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(20%);
+  }
+}
+
+@media (max-width: 500px) {
+  .mensaje-error {
+    position: absolute;
+    width: 70%;
+    font-size: 14px;
+    top: 90%;
+  }
+
+  @keyframes slideIn {
+    100% {
+      transform: translateY(-20%);
+    }
+  }
+
 }

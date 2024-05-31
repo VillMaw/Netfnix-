@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login1.css">
+    <link rel="shortcut icon" href="../imagenes/1.jpg" type="image/x-icon">
     <title>Login Netfix</title>
 </head>
+
 <body>
     <nav>
         <a href="../index.html" class="imagen"><img src="../imagenes/netflix/NETfNIX-15-4-2024_1.png" alt=""></a>
     </nav>
     <div class="form-wrapper" id="form">
         <h2>Iniciar sesión</h2>
-        <form id = "formulario" action="#" novalidate>
-         <div id="mensajeError" class="mensaje-error"></div>
+        <form id="formulario" action="#">
+
             <div class="form-control">
-                <input type="text" id="usuario" required>
+                <input type="text" id="usuario">
                 <label>Email</label>
             </div>
             <div class="form-control">
-                <input type="password"  id="contrasenia" required>
+                <input type="password" id="contrasenia">
                 <label>Contraseña</label>
             </div>
             <button type="submit">Enviar</button>
@@ -28,13 +31,15 @@
                     <input type="checkbox" id="remember-me">
                     <label for="remember-me">Recuerdame</label>
                 </div>
-                    <a href="https://help.netflix.com/es">¿Necesitas ayuda?</a>
-            </div>       
+                <a href="https://help.netflix.com/es">¿Necesitas ayuda?</a>
+            </div>
         </form>
         <p>¿Primera vez en Netfix? <a href="./registro.html">Suscribete ahora.</a></p>
+        <div id="mensajeError" class="mensaje-error"></div>
         <br>
         <small>Copyright ©Codo a Codo 2024</small>
-    </div> 
+    </div>
     <script src="../js/formulario.js"></script>
 </body>
+
 </html>
